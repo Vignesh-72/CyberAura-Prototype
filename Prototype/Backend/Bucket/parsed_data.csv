@@ -1,2 +1,9 @@
 timestamp,src_ip,src_port,dst_ip,dst_port,highest_protocol,length,url,status_code,attack_type
-1759034875.306592000,172.17.0.1,42894,172.17.0.3,80,HTTP,732,http://localhost/vulnerabilities/sqli/?id=%27+OR+1%3D1%23&Submit=Submit,200,
+172.17.0.1_50854,172.17.0.1,50854,172.17.0.3,80,URLENCODED-FORM,828,http://localhost/vulnerabilities/exec/,200,
+172.17.0.1_38622,172.17.0.1,38622,172.17.0.3,80,HTTP,674,http://localhost/vulnerabilities/fi/?page=../../hackable/flags/fi.php,200,
+172.17.0.1_42894,172.17.0.1,42894,172.17.0.3,80,HTTP,732,http://localhost/vulnerabilities/sqli/?id=%27+OR+1%3D1%23&Submit=Submit,200,
+172.17.0.1_40502,172.17.0.1,40502,172.17.0.3,80,HTTP,760,http://localhost/vulnerabilities/xss_d/?default=English%23%253Cscript%253Ealert%28,200,
+172.17.0.1_41416,172.17.0.1,41416,172.17.0.3,80,HTTP,757,http://localhost/vulnerabilities/xss_r/?name=%3Cscript%3Ealert%28%27XSS%27%29%3B%3C%2Fscript%3E,200,
+172.17.0.1_xss_s_1,172.17.0.1,502,172.17.0.3,80,URLENCODED-FORM,907,http://localhost/vulnerabilities/xss_s/,200,
+172.17.0.1_xss_s_2,172.17.0.1,534,172.17.0.3,80,HTTP,644,http://localhost/vulnerabilities/xss_s/,200,
+172.17.0.1_favicon,172.17.0.1,565,172.17.0.3,80,HTTP,639,http://localhost/favicon.ico,200,
