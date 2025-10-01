@@ -1,6 +1,7 @@
 # 🛡️ CyberAura: Hybrid URL Attack Detection Engine
 
-A prototype developed for the Smart India Hackathon (SIH) 2025.
+[![Live App](https://img.shields.io/badge/🚀%20Launch%20App-Streamlit-green?style=for-the-badge)](https://cyberaura.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
 
 CyberAura is a web-based security tool designed to identify URL-based attacks from network traffic data (PCAP files) or log files (CSV). It leverages a powerful hybrid detection engine that combines high-speed pattern matching with intelligent machine learning to provide comprehensive threat analysis.
 
