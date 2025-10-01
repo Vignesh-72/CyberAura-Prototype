@@ -1,0 +1,2 @@
+timestamp,src_ip,src_port,dst_ip,dst_port,highest_protocol,length,url,status_code,attack_type
+1759035440.070987000,172.17.0.1,41416,172.17.0.3,80,HTTP,757,http://localhost/vulnerabilities/xss_r/?name=%3Cscript%3Ealert%28%27XSS%27%29%3B%3C%2Fscript%3E,200,

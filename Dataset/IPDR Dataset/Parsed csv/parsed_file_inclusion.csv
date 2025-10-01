@@ -1,0 +1,2 @@
+timestamp,src_ip,src_port,dst_ip,dst_port,highest_protocol,length,url,status_code,attack_type
+1759038523.459554000,172.17.0.1,38622,172.17.0.3,80,HTTP,674,http://localhost/vulnerabilities/fi/?page=../../hackable/flags/fi.php,200,

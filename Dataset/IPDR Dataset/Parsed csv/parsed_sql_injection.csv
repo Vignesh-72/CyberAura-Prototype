@@ -1,0 +1,2 @@
+timestamp,src_ip,src_port,dst_ip,dst_port,highest_protocol,length,url,status_code,attack_type
+1759034875.306592000,172.17.0.1,42894,172.17.0.3,80,HTTP,732,http://localhost/vulnerabilities/sqli/?id=%27+OR+1%3D1%23&Submit=Submit,200,
