@@ -1,0 +1,4 @@
+timestamp,src_ip,src_port,dst_ip,dst_port,highest_protocol,length,url,status_code,attack_type
+2025-09-28T10:58:52.598126,172.17.0.1,41272,172.17.0.3,80,URLENCODED-FORM,907,http://localhost/vulnerabilities/xss_s/,200.0,
+2025-09-28T10:58:55.266797,172.17.0.1,41272,172.17.0.3,80,HTTP,644,http://localhost/vulnerabilities/xss_s/,200.0,
+2025-09-28T10:58:56.036618,172.17.0.1,41272,172.17.0.3,80,HTTP,639,http://localhost/favicon.ico,200.0,
