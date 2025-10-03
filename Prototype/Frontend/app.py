@@ -6,14 +6,11 @@ from io import StringIO
 import plotly.express as px
 import time
 
-# --- Add Backend to Python Path ---
-# Corrected base_dir to point to the project root (up two levels from app.py)
 base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 if base_dir not in sys.path:
     sys.path.insert(0, base_dir)
 
-try:
-    # Corrected imports to be absolute from the project root
+try:  
     from Prototype.Backend.Parser.pcap_parser import parse_pcap_to_df
     from Prototype.Backend.Detector.regex_detector import run_regex_phase
     from Prototype.Backend.Detector.ml_detector import run_ml_phase
@@ -21,7 +18,6 @@ except ImportError as e:
     st.error(f"Fatal Error: Could not import backend modules: {e}. Please ensure the folder structure is correct.")
     st.stop()
 
-# --- HELPER FUNCTIONS ---
 
 def find_test_files():
     """Finds all pcap and csv files in the Dataset directory and structures them for the UI."""
@@ -29,7 +25,7 @@ def find_test_files():
     dataset_path = os.path.join(base_dir, 'Dataset')
     ipdr_path = os.path.join(dataset_path, 'IPDR Dataset')
 
-    # 1. Define and add the main comprehensive sample files first
+    
     recommended_files = {
         "Recommended Demo: All Attacks (CSV)": os.path.join(ipdr_path, "sample1_dataset.csv"),
         "Demo: SQL & Command Injection (PCAP)": os.path.join(ipdr_path, "sample2_dataset(sql & command injection).pcap"),
@@ -41,7 +37,7 @@ def find_test_files():
         if os.path.exists(full_path):
             test_files[display_name] = full_path
 
-    # 2. Add individual attack files for more specific testing
+    
     pcap_path = os.path.join(dataset_path, 'Attack Pcaps')
     if os.path.isdir(pcap_path):
         for root, _, files in os.walk(pcap_path):
@@ -113,14 +109,14 @@ def display_team_info():
         
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.markdown("**Vignesh S**<br>*Project Lead & System Architect*", unsafe_allow_html=True)
-            st.markdown("**Thasmiya Kulsum K**<br>*Backend Development (Parsers & Engine)*", unsafe_allow_html=True)
+            st.markdown("**Sheema Kaunain S.H**<br>*Backend Development (Parsers & Engine)*", unsafe_allow_html=True)
+            st.markdown("**Thasmiya Kulsum K**<br>*Frontend Development (Streamlit UI/UX)*", unsafe_allow_html=True)
         with col2:
-            st.markdown("**UMAR FAROOQ .V .H**<br>*Machine Learning & Model Training*", unsafe_allow_html=True)
-            st.markdown("**Sheema Kaunain S.H**<br>*Frontend Development (Streamlit UI/UX)*", unsafe_allow_html=True)
-        with col3:
             st.markdown("**Froz Naasim N**<br>*Dataset Management & Regex Engine*", unsafe_allow_html=True)
-            st.markdown("**Shahana Muskaan G I**<br>*Testing, Validation & Documentation*", unsafe_allow_html=True)
+            st.markdown("**Shahana Muskaan G I**<br>*Testing, Validation & Documentation*", unsafe_allow_html=True) 
+        with col3:  
+            st.markdown("**UMAR FAROOQ .V .H**<br>*Machine Learning & Model Training*", unsafe_allow_html=True)
+            st.markdown("**VIGNESH S**<br>*Project Lead & System Architect*", unsafe_allow_html=True)
 
 def run_analysis_pipeline(file_input, is_uploaded_file=True):
     """Handles the entire backend analysis process with UI updates."""
@@ -258,7 +254,7 @@ def display_results_dashboard(results_df):
     st.markdown("---")
     display_team_info()
 
-# --- MAIN APPLICATION FLOW ---
+
 def main():
     st.set_page_config(page_title="CyberAura", page_icon="🛡️", layout="wide")
 
