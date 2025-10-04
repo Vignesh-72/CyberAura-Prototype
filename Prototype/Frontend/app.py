@@ -104,9 +104,7 @@ def display_prototype_info():
 def display_team_info():
     """Displays information about the team members and their roles."""
     with st.container(border=True):
-        st.markdown("### 👥 Meet the Team: CyberAura")
-        st.markdown("This prototype was proudly developed for the Smart India Hackathon Grand Finale by:")
-        
+        st.markdown("### 👥 Meet the Team: CyberAura")    
         col1, col2, col3 = st.columns(3)
         with col1:
             st.markdown("**Sheema Kaunain S.H**<br>*Backend Development (Parsers & Engine)*", unsafe_allow_html=True)
